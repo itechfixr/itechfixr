@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Patel - Certified Ethical Hacker & Cybersecurity Trainer | CEH Training in Pune</title>
+    <meta name="description"
+        content="Learn cybersecurity from Hardik Patel, Certified Ethical Hacker (CEH) with 7+ years experience. Expert training in penetration testing, security awareness & ethical hacking in Pune, India.">
+    <meta name="keywords"
+        content="cybersecurity training, CEH training, ethical hacking course, penetration testing training, cybersecurity expert Pune, security awareness training, Hardik Patel">
+    <meta name="author" content="Hardik Patel">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/image/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/image/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/image/favicon.png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hardik Patel - Certified Ethical Hacker & Cybersecurity Trainer">
+    <meta property="og:description"
+        content="Expert cybersecurity training from a CEH certified professional. Learn ethical hacking, penetration testing & security awareness.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itechfixr.com">
+    <link rel="canonical" href="https://itechfixr.com">
+    <meta property="og:image" src="/assets/profile-hardik.jpg">
+    <meta property="og:image:alt" content="Hardik Patel - Cybersecurity Trainer">
+    <meta property="og:site_name" content="iTechFixr">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Security Protection Meta Tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Code Protection Script -->
+    <script>
+        (function () {
+            'use strict';
+
+            // Detect developer tools
+            let devtools = { open: false };
+            const threshold = 160;
+
+            setInterval(function () {
+                if (window.outerHeight - window.innerHeight > threshold ||
+                    window.outerWidth - window.innerWidth > threshold) {
+                    if (!devtools.open) {
+                        devtools.open = true;
+                        document.body.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Arial;font-size:24px;color:#dc2626;background:#f9fafb;">🔒 Access Denied - Developer Tools Detected</div>';
+                    }
+                } else {
+                    devtools.open = false;
+                }
+            }, 500);
+
+            // Console warning
+            setTimeout(function () {
+                console.log('%c🔒 STOP!', 'color: red; font-size: 50px; font-weight: bold;');
+                console.log('%cThis is a browser feature intended for developers. Code theft is illegal and monitored.', 'color: red; font-size: 16px;');
+                console.log('%c© 2025 iTechFixr - All Rights Reserved', 'color: blue; font-size: 14px;');
+            }, 1000);
+        })();
+    </script>
+
+    <!-- EmailJS for contact form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("4837inGc1DsH53a4r"); // Your actual Public Key
+        })();
+    </script>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <!-- Logo with Image and Text -->
+            <a href="https://itechfixr.in" class="logo">
+                <img src="/assets/image/logo.png" alt="iTechFixr Logo" class="logo-image">
+                <span class="logo-text"></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="https://itechfixr.in">Home</a></li>
+                <li><a href="#services">Training</a></li>
+                <li><a href="https://itechfixr.in/about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <div class="theme-icon" id="themeIcon">🌙</div>
+                </button>
+                <a href="#contact" class="cta-header">Get Started</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="https://itechfixr.in">Home</a></li>
+                <li><a href="#services">Training</a></li>
+                <li><a href="https://itechfixr.in/about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-elements">
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    🛡️ Certified Ethical Hacker (CEH)
+                </div>
+                <h1>
+                    Master <span class="hero-highlight">Cybersecurity</span><br>
+                    with <br><span class="typing-text" id="typingText">Expert Training</span>
+                </h1>
+                <p>
+                    Transform your career with comprehensive cybersecurity training from a certified professional.
+                    Learn ethical hacking, penetration testing, and security best practices through hands-on,
+                    practical sessions designed for real-world application.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">
+                        Start Learning Today →
+                    </a>
+                    <a href="#services" class="btn-secondary">
+                        View Courses
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <div class="profile-placeholder">
+                        <img src="/assets/image/profile-hardik.png" alt="Hardik Patel - Cybersecurity Expert"
+                            class="profile-image" loading="lazy">
+                        <div class="profile-placeholder-fallback"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Hardik Patel</h3>
+                        <p>Cybersecurity Trainer & iTechFixr Founder</p>
+                        <div class="credentials-list">
+                            <div class="credential-item">🎯 CEH Certified (EC Council US)</div>
+                            <div class="credential-item">🚀 7+ Years Industry Experience</div>
+                            <div class="credential-item">🏢 iTechFixr Founder & CEO</div>
+                            <div class="credential-item">🛡️ VAPT Specialist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="about" class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Students Trained</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="7">0</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="100">0</span>
+                <span class="stat-label">Career Growth Support</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="99">0</span>
+                <span class="stat-label">Corporate Clients</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Cybersecurity Training</h2>
+                <p class="section-subtitle">
+                    Comprehensive training programs designed to build practical cybersecurity skills
+                    for individuals, professionals, and organizations.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>CEH Certification Training</h3>
+                    <p>Complete preparation for Certified Ethical Hacker certification with hands-on labs, real-world
+                        scenarios, and expert guidance.</p>
+                    <ul class="service-features">
+                        <li>Comprehensive CEH curriculum coverage</li>
+                        <li>Hands-on penetration testing labs</li>
+                        <li>Real-world vulnerability assessments</li>
+                        <li>Exam preparation & practice tests</li>
+                        <li>Career mentorship & guidance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Corporate Security Training</h3>
+                    <p>Customized cybersecurity awareness and technical training programs for businesses to strengthen
+                        their security posture.</p>
+                    <ul class="service-features">
+                        <li>Security awareness for employees</li>
+                        <li>Phishing simulation training</li>
+                        <li>Incident response procedures</li>
+                        <li>Compliance training (ISO 27001)</li>
+                        <li>Technical staff upskilling</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Educational Institution Programs</h3>
+                    <p>Specialized cybersecurity programs for schools, colleges, and technical institutes to build the
+                        next generation of security professionals.</p>
+                    <ul class="service-features">
+                        <li>Student career guidance sessions</li>
+                        <li>Cybersecurity fundamentals courses</li>
+                        <li>Practical ethical hacking workshops</li>
+                        <li>Industry exposure programs</li>
+                        <li>Certification preparation support</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Advanced Technical Training</h3>
+                    <p>Specialized courses for IT professionals looking to advance their cybersecurity expertise with
+                        cutting-edge techniques.</p>
+                    <ul class="service-features">
+                        <li>Advanced penetration testing</li>
+                        <li>VAPT methodologies</li>
+                        <li>Security architecture design</li>
+                        <li>Threat hunting techniques</li>
+                        <li>Cloud security implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="certifications-container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Certifications</h2>
+                <p class="section-subtitle">
+                    Industry-recognized certifications and continuous learning ensuring cutting-edge cybersecurity
+                    expertise.
+                </p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-logo-icon">
+                        <div class="cert-icon">🎯</div>
+                    </div>
+                    <h3>Certified Ethical Hacker (CEH)</h3>
+                    <p class="cert-issuer">EC Council, USA</p>
+                    <p class="cert-description">Advanced ethical hacking and penetration testing certification</p>
+                    <span class="cert-status">✅ Certified</span>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="/assets/image/training-cert.png" alt="Training Certification" loading="lazy">
+                    </div>
+                    <h3>Advanced Penetration Testing</h3>
+                    <p class="cert-issuer">Specialized Training Institute</p>
+                    <p class="cert-description">Advanced VAPT methodologies and security assessment</p>
+                    <span class="cert-status">✅ Completed</span>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="/assets/image/cyber-cert.png" alt="Cybersecurity Certification" loading="lazy">
+                    </div>
+                    <h3>Cybersecurity Professional</h3>
+                    <p class="cert-issuer">Industry Training Program</p>
+                    <p class="cert-description">Comprehensive cybersecurity frameworks and best practices</p>
+                    <span class="cert-status">✅ Certified</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Students Say</h2>
+                <p class="section-subtitle">
+                    Real feedback from professionals who have transformed their careers through our training programs.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Hardik's cybersecurity training transformed our understanding of digital threats. His hands-on
+                        approach made complex concepts easy to grasp. Our team now feels confident identifying and
+                        preventing cyber attacks."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>IT Manager, Tech Solutions Pvt Ltd</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "The CEH training program was exactly what I needed to advance my career. Hardik's real-world
+                        experience and practical examples made all the difference. I passed my certification on the
+                        first try and got promoted!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RM</div>
+                        <div class="author-info">
+                            <h4>Rohit Mehta</h4>
+                            <p>Senior Security Analyst, InfoSec Corp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "As a college student, I was completely new to cybersecurity. Hardik's patient teaching style
+                        and engaging live sessions helped me discover my passion for ethical hacking. Now I'm pursuing
+                        it as a career!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-info">
+                            <h4>Ankit Kumar</h4>
+                            <p>Engineering Student, VIT Pune</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "iTechFixr's cybersecurity team, led by Hardik, saved our business from a major cyber threat.
+                        Their proactive approach and cutting-edge knowledge kept our data safe. Outstanding expertise
+                        and professionalism!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SS</div>
+                        <div class="author-info">
+                            <h4>Suresh Shah</h4>
+                            <p>Business Owner, Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Start Your Cybersecurity Journey?</h2>
+                <p class="section-subtitle">
+                    Book a free consultation to discuss your training needs and career goals.
+                    Let's build your cybersecurity expertise together.
+                </p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="from_name" required aria-describedby="name-help">
+                        <div id="name-help" class="sr-only">Enter your full legal name</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="from_email" required aria-describedby="email-help">
+                        <div id="email-help" class="sr-only">Enter a valid email address for communication</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone_number" pattern="[0-9]{10}"
+                            title="Please enter a 10-digit phone number" required aria-describedby="phone-help">
+                        <div id="phone-help" class="sr-only">Enter your 10-digit mobile number</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="training-type">Training Interest *</label>
+                        <select id="training-type" name="training_interest" required aria-describedby="training-help">
+                            <option value="">Select Training Program</option>
+                            <option value="CEH Certification Training">CEH Certification Training</option>
+                            <option value="Corporate Security Training">Corporate Security Training</option>
+                            <option value="Cybersecurity Fundamentals">Cybersecurity Fundamentals</option>
+                            <option value="Advanced Penetration Testing">Advanced Penetration Testing</option>
+                            <option value="Educational Institution Program">Educational Institution Program</option>
+                            <option value="Custom Training Solution">Custom Training Solution</option>
+                        </select>
+                        <div id="training-help" class="sr-only">Choose the training program that interests you most
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Current Experience Level</label>
+                        <select id="experience" name="experience_level" aria-describedby="experience-help">
+                            <option value="">Select Experience Level</option>
+                            <option value="Complete Beginner">Complete Beginner</option>
+                            <option value="Basic IT Knowledge">Basic IT Knowledge</option>
+                            <option value="Intermediate (1-3 years)">Intermediate (1-3 years)</option>
+                            <option value="Experienced (3+ years)">Experienced (3+ years)</option>
+                        </select>
+                        <div id="experience-help" class="sr-only">Select your current level of cybersecurity experience
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell me about your goals *</label>
+                        <textarea id="message" name="user_message"
+                            placeholder="What do you want to achieve with cybersecurity training? Any specific requirements or questions?"
+                            required aria-describedby="message-help"></textarea>
+                        <div id="message-help" class="sr-only">Describe your learning goals and any specific
+                            requirements</div>
+                    </div>
+
+                    <!-- Hidden fields for additional context -->
+                    <input type="hidden" name="to_email" value="support@itechfixr.com">
+                    <input type="hidden" name="website_source" value="itechfixr.com">
+                    <input type="hidden" name="submission_date" id="submission_date">
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            Book Free Consultation →
+                        </button>
+                        <p style="margin-top: 1rem; color: var(--text-gray); font-size: 0.9rem;">
+                            🔒 Your information is secure and will never be shared. Get response within 24 hours.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/hardikpatel-itf" target="_blank">LinkedIn</a>
+                <a href="https://itechfixr.com" target="_blank">iTechFixr</a>
+                <a href="mailto:support@itechfixr.com">Email</a>
+                <a href="tel:+918976195477">📞 CALL for Appointment</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hardik Patel - Cybersecurity Trainer. All rights reserved.</p>
+                <p>🛡️ Building secure digital futures through expert cybersecurity education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UPDATED EMAILJS FORM HANDLER SCRIPT - SENDS BOTH MAIN EMAIL AND AUTO-REPLY -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Add current date and time
+            document.getElementById('submission_date').value = new Date().toLocaleString('en-IN', {
+                timeZone: 'Asia/Kolkata',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            
+            // Show loading state
+            submitBtn.innerHTML = '⏳ Sending Message...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+            
+            // EmailJS configuration
+            const serviceID = 'service_9vohciw';
+            const mainTemplateID = 'template_itechfixr';      // Email to you
+            const autoReplyTemplateID = 'template_auto_reply'; // Auto-reply to user
+            
+            // Send main email to you (support@itechfixr.com)
+            emailjs.sendForm(serviceID, mainTemplateID, this)
+                .then(function(response) {
+                    console.log('✅ Main email sent successfully!', response.status);
+                    
+                    // Now send auto-reply to user
+                    return emailjs.sendForm(serviceID, autoReplyTemplateID, document.getElementById('contactForm'));
+                })
+                .then(function(response) {
+                    console.log('✅ Auto-reply sent successfully!', response.status);
+                    
+                    // Show success state
+                    submitBtn.innerHTML = '✅ Message Sent Successfully!';
+                    submitBtn.style.background = '#059669';
+                    submitBtn.style.opacity = '1';
+                    
+                    // Show success notification
+                    showNotification('🎉 Perfect! Your message has been sent and you should receive a confirmation email shortly. I will personally contact you within 24 hours to schedule your free consultation!', 'success');
+                    
+                    // Reset form
+                    document.getElementById('contactForm').reset();
+                    
+                    // Reset button after 5 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = '';
+                        submitBtn.style.opacity = '1';
+                    }, 5000);
+                    
+                })
+                .catch(function(error) {
+                    console.error('❌ Email sending failed:', error);
+                    
+                    // Show error state
+                    submitBtn.innerHTML = '❌ Failed to Send';
+                    submitBtn.style.background = '#dc2626';
+                    submitBtn.style.opacity = '1';
+                    
+                    // Show error notification with contact alternatives
+                    showNotification('❌ Sorry, there was a technical issue. Please contact us directly:<br><br>📧 <strong>support@itechfixr.com</strong><br>📱 <strong>+91-89761-95477</strong><br>💬 <strong>WhatsApp: wa.me/918976195477</strong>', 'error');
+                    
+                    // Reset button after 5 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = '';
+                        submitBtn.style.opacity = '1';
+                    }, 5000);
+                });
+        });
+
+        // Enhanced notification function
+        function showNotification(message, type) {
+            // Remove existing notifications
+            const existingNotifications = document.querySelectorAll('.email-notification');
+            existingNotifications.forEach(notification => notification.remove());
+            
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'email-notification';
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: ${type === 'success' ? 'linear-gradient(135deg, #059669, #047857)' : 'linear-gradient(135deg, #dc2626, #b91c1c)'};
+                color: white;
+                padding: 1.5rem 2rem;
+                border-radius: 16px;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+                z-index: 10000;
+                max-width: 450px;
+                font-weight: 500;
+                line-height: 1.6;
+                animation: slideInRight 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                border-left: 6px solid ${type === 'success' ? '#047857' : '#b91c1c'};
+                backdrop-filter: blur(10px);
+            `;
+            
+            notification.innerHTML = `
+                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div style="font-size: 1.5rem; flex-shrink: 0; margin-top: 0.25rem;">
+                        ${type === 'success' ? '🎉' : '⚠️'}
+                    </div>
+                    <div style="flex: 1; font-size: 0.95rem;">
+                        ${message}
+                    </div>
+                    <button onclick="this.parentElement.parentElement.remove()" 
+                            style="background: rgba(255,255,255,0.2); border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.background='rgba(255,255,255,0.3)'"
+                            onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+                        ×
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Auto remove after 10 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.style.animation = 'slideOutRight 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 500);
+                }
+            }, 10000);
+        }
+
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideInRight {
+                from {
+                    opacity: 0;
+                    transform: translateX(100%) scale(0.8);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0) scale(1);
+                }
+            }
+            
+            @keyframes slideOutRight {
+                from {
+                    opacity: 1;
+                    transform: translateX(0) scale(1);
+                }
+                to {
+                    opacity: 0;
+                    transform: translateX(100%) scale(0.8);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "674b619462bb4b97a0f922263ca7c997"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+
+</html>
